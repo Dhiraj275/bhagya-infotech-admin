@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.login-page {
+    /* background: url(../assets/images/home-farmer.jpg); */
+    background-position: top;
+    background-clip: border-box;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+.login-page #wrapper {
+    margin: auto;
+    width: fit-content;
+    max-width: 80vw;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 0px;
+    border-radius: 40px;
+    transform: translateY(160px);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.582);
+}
+
+.login-page legend {
+    font-size: 22px;
+    background-color: lightgreen;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 40px;
+    margin: auto;
+    border-radius: 22px;
+    border: 2px solid black;
+    transform: translateY(-60px) scale(1.2, 1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.login-page input[type="tel"], .login-page input[type="number"] {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 45px;
+    border: none;
+    margin: 10px auto;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
+
+.login-page #submit {
+    background-color: lightgreen;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    border-bottom: none;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+}
+
+.login-page .main-form {
+    padding: 10px 40px 10px;
+}
+
+.login-page .input-icon {
+    font-size: 28px !important;
+    transform: translateY(10px);
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: -45px;
+}
+
+.login-page .other-link {
+    font-weight: 600;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 2px 10px;
+}
+.otp-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0,.9);
+    color: #000;
+    text-align: center;
+}
+.otp-main .otp-box{
+    backdrop-filter: blur(9px);
+    padding: 30px 20px;
+    background-color: rgba(255,255,255, .6);
+    border-radius: 40px;
+}
+.otp-box input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.swal2-container.swal2-center.swal2-backdrop-show{
+    z-index: 99999!important;
+}
+@media (max-width: 420px) {
+    .login-page input {
+        width: 200px;
+    }
+}
